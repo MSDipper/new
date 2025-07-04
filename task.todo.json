@@ -1,0 +1,64 @@
+{
+  "project": "MYPL",
+  "status": "completed",
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Анализ Figma макета",
+      "description": "Получить данные макета MYPL из Figma и проанализировать дизайн",
+      "status": "completed",
+      "assignee": "front-end",
+      "priority": "high"
+    },
+    {
+      "id": 2,
+      "title": "Структурирование HTML",
+      "description": "Создать семантичную HTML разметку на основе макета",
+      "status": "completed",
+      "assignee": "front-end",
+      "priority": "high"
+    },
+    {
+      "id": 3,
+      "title": "CSS стили компонентов",
+      "description": "Написать pixel perfect CSS стили для всех компонентов",
+      "status": "completed",
+      "assignee": "front-end",
+      "priority": "high"
+    },
+    {
+      "id": 4,
+      "title": "Адаптивность и респонсивность",
+      "description": "Добавить адаптивность для мобильных и планшетов",
+      "status": "completed",
+      "assignee": "front-end",
+      "priority": "medium"
+    },
+    {
+      "id": 5,
+      "title": "JavaScript функциональность",
+      "description": "Реализовать интерактивные элементы",
+      "status": "todo", 
+      "assignee": "back-end",
+      "priority": "medium"
+    },
+    {
+      "id": 6,
+      "title": "Оптимизация производительности",
+      "description": "Оптимизировать загрузку и производительность",
+      "status": "todo",
+      "assignee": "devops",
+      "priority": "low"
+    },
+    {
+      "id": 7,
+      "title": "Тестирование pixel perfect",
+      "description": "Проверить соответствие макету попиксельно",
+      "status": "todo",
+      "assignee": "front-end",
+      "priority": "high"
+    }
+  ],
+  "completed": [1, 2, 3, 4],
+  "next_action": "Проект готов! Можно переходить к тестированию и оптимизации при необходимости"
+} 

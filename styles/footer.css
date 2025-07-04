@@ -1,0 +1,186 @@
+.footer {
+    display: flex;
+    width: var(--full);
+    margin-bottom: 37px;
+}
+
+.footer-link__logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--grey);
+    border-left: none;
+    padding: 10px 25px;
+    font-size: var(--sm);
+}
+
+.footer-list {
+    display: flex;
+    justify-content: space-between;
+    width: var(--full);
+    align-items: center;
+}
+
+.footer-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--full);
+    height: var(--full);
+}
+
+.footer-link {
+    border: 1px solid var(--grey);
+    border-left: none;
+    width: var(--full);
+    height: var(--full);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-social {
+    display: flex;
+    gap: 1px;
+    margin-left: 1px;
+}
+
+.footer-social  a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: var(--black);
+    transition: background-color 0.2s ease;
+}
+
+.footer-social a img{
+    width: 20px;
+    height: 20px;
+}
+
+.footer-social__whatsapp {}
+.footer-social__telegram {}
+
+/* Скрываем адаптивную структуру на больших экранах */
+.footer-top-row,
+.footer-policies,
+.footer-address {
+    display: none;
+}
+.our-case__links-arrows {
+    display: none;
+}
+/* Адаптация футера для экранов ниже 1200px */
+@media (max-width: 1200px) {
+    .footer {
+        flex-direction: column;
+        gap: 0;
+        border-top: 1px solid var(--grey);
+    }
+    
+    /* Скрываем оригинальную структуру на маленьких экранах */
+    .footer > .footer-link__logo,
+    .footer > .footer-list,
+    .footer > .footer-social {
+        display: none;
+    }
+    
+    /* Показываем адаптивную структуру */
+    .footer-top-row {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid var(--grey);
+        padding-left: 14px;
+    }
+    
+    .footer-policies {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border-bottom: 1px solid var(--grey);
+    }
+    
+    .footer-address {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 12px 20px;
+        text-align: center;
+        font-size: var(--sm);
+        color: var(--black);
+        text-decoration: none;
+    }
+    
+    .footer-left-group {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        width: var(--full);
+;
+    }
+    .footer-email{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: var(--full);
+     height: var(--full);
+     border-left: 1px solid var(--grey);
+    }
+    .footer-top-row .footer-link__logo {
+        border: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .footer-email {
+        font-size: var(--sm);
+        color: var(--black);
+        text-decoration: none;
+    }
+    
+    .footer-top-row .footer-social {
+        margin: 0;
+        gap: 1px;
+        display: flex;
+    }
+    
+    .footer-top-row .footer-social a {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .footer-policy-item {
+        padding: 12px 14px;
+        border-right: 1px solid var(--grey);
+        font-size: var(--sm);
+        color: var(--black);
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+    }
+    
+    .footer-policy-item:hover {
+        background-color: #f5f5f5;
+    }
+    
+    .footer-policy-item:last-child {
+        border-right: none;
+    }
+    
+    .footer-address:hover {
+        background-color: #f5f5f5;
+    }
+    .footer-policy-item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+} 
+@media (max-width: 768px) {
+.footer-policy-item {
+    font-size: var(--xss);
+    text-align: center;
+    text-wrap: nowrap;
+}
+}

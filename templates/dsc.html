@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.82/build/spline-viewer.js"></script>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../styles/styles-cases-one.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-content">
+            <a class="header-logo" href="#">
+                <img src="../img/index/logo.svg" alt="MYPL Logo">
+            </a>
+
+            <div class="header-search">
+                <input class="header-search__input" type="text">
+                <button class="header-search__button" type="button">
+                    <img src="../img/index/seatch.svg" alt="Search">
+                </button>
+            </div>
+
+            <nav class="header-nav">
+                <ul class="header-nav__list">
+                    <li class="header-nav__item">
+                        <a class="header-nav__link" href="#">EN</a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a class="header-nav__link" href="#">О нас</a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a class="header-nav__link" href="#">Кейсы</a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a class="header-nav__link" href="#">Услуги</a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a class="header-nav__link header-nav__link--phone" href="tel:+79992293679">89992293679</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Бургер кнопка -->
+            <button class="burger-btn" id="burgerBtn" aria-label="Открыть меню">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </button>
+
+            <div class="header-social">
+                <a class="header-social__link header-social__link--whatsapp" href="#">
+                    <img src="../img/social/whatsapp.svg" alt="WhatsApp">
+                </a>
+                <a class="header-social__link header-social__link--telegram" href="#">
+                    <img src="../img/social/telegram.svg" alt="Telegram">
+                </a>
+            </div>
+
+            <a class="header-contact" href="#">
+                <span class="header-contact__text">Контакты</span>
+                <img class="header-contact__arrow" src="../img/social/arrow.svg" alt="Arrow">
+            </a>
+        </div>
+    </header>
+
+    <!-- Полноэкранное мобильное меню -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu__content">
+            <div class="mobile-menu__top"></div>
+
+            <nav class="mobile-nav">
+                <ul class="mobile-nav__list">
+                    <li class="mobile-nav__item">
+                        <a class="mobile-nav__link" href="#">EN</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                        <a class="mobile-nav__link" href="#">О нас</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                        <a class="mobile-nav__link" href="#">Кейсы</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                        <a class="mobile-nav__link" href="#">Услуги</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                        <a class="mobile-nav__link mobile-nav__link--phone" href="tel:+79992293679">89992293679</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="mobile-menu__bottom">
+                <div class="mobile-social">
+                    <a class="mobile-social__link" href="#">
+                        <img src="../img/social/whatsapp.svg" alt="WhatsApp">
+                    </a>
+                    <a class="mobile-social__link mobile-social__link--telegram" href="#">
+                        <img src="../img/social/telegram.svg" alt="Telegram">
+                    </a>
+                </div>
+
+                <a class="mobile-contact" href="#">
+                    <span class="mobile-contact__text">Контакты</span>
+                    <img class="mobile-contact__arrow" src="../img/social/arrow.svg" alt="Arrow">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <section class="our-case">
+        <!-- Блок our-case__top -->
+        <div class="our-case__top">
+            <a class="our-case__top-button" href="#">
+                Сайты
+            </a>
+            <h2 class="our-case__top-title">
+                DSC
+            </h2>
+        </div>
+
+        <!-- Стрелки навигации (показываются на мобильных) -->
+        <div class="our-case__links-arrows">
+            <a class="our-case__link-arrow" href="#">
+                <svg class="case-cat__arrow" viewBox="0 0 52 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="25.668" cy="25.5" r="25" />
+                    <path d="M29.9141 29.7432L28.542 29.7432V24.5615L29.9141 24.5615V29.7432Z" />
+                    <path
+                        d="M29.9131 21.4707V21.9375L29.4688 22.3721C29.4557 22.3834 29.4421 22.3941 29.4297 22.4062L22.1426 29.543L21.6396 29.0498L26.9629 23.8369C27.6084 23.2045 27.1294 22.1575 26.2656 22.1572H21.4668V21.4707H29.9131Z" />
+                </svg>
+            </a>
+            <a class="our-case__link-arrow" href="#">
+                <svg class="case-cat__arrow" viewBox="0 0 52 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="25.668" cy="25.5" r="25" />
+                    <path d="M29.9141 29.7432L28.542 29.7432V24.5615L29.9141 24.5615V29.7432Z" />
+                    <path
+                        d="M29.9131 21.4707V21.9375L29.4688 22.3721C29.4557 22.3834 29.4421 22.3941 29.4297 22.4062L22.1426 29.543L21.6396 29.0498L26.9629 23.8369C27.6084 23.2045 27.1294 22.1575 26.2656 22.1572H21.4668V21.4707H29.9131Z" />
+                </svg>
+            </a>
+        </div>
+
+        <!-- Блок our-case__choise-list -->
+        <ul class="our-case__choise-list">
+            <li class="our-case__choise-item our-case__choise-item--active">
+                <a class="our-case__choise-link" href="#">Название сайта</a>
+            </li>
+            <li class="our-case__choise-item">
+                <a class="our-case__choise-link" href="#">Название сайта</a>
+            </li>
+            <li class="our-case__choise-item">
+                <a class="our-case__choise-link" href="#">Название сайта</a>
+            </li>
+            <li class="our-case__choise-item">
+                <a class="our-case__choise-link" href="#">Название сайта</a>
+            </li>
+            <li class="our-case__choise-item">
+                <a class="our-case__choise-link" href="#">Название сайта</a>
+            </li>
+            <li class="our-case__choise-item">
+                <a class="our-case__choise-link" href="#">Название сайта</a>
+            </li>
+        </ul>
+
+
+    </section>
+    <section class="case">
+        <div class="case-info">
+            <div class="case-info__blocks">
+                <a class="case-info__block" href="#">
+                    <div class="case-info__block-content">
+                        <img src="../img/blocks/logo/logo.png" alt="">
+                        <div class="case-info__block-content-text">
+                            <h3>Сайт для студии дизайна интерьера</h3>
+                            <p>Сделали акцент на визуале и атмосфере бренда, упростили взаимодействие с пользователем.
+                                Эстетично, лаконично, работает на привлечение клиентов.</p>
+                        </div>
+                    </div>
+                    <div class="case-info__block-content-link">
+                        <div>
+                            Перейти на сайт
+                            <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12.1396 11.6084L10.0703 11.6084L10.0703 4.6084L12.1396 4.6084L12.1396 11.6084Z"
+                                    fill="white" stroke="white" />
+                                <path
+                                    d="M12.0029 0.608399C12.0881 0.608579 12.1396 0.673932 12.1396 0.732423L12.1396 1.4209L11.5195 2.0293L11.4697 2.07227L1.93652 11.4072L1.07519 10.5645L8.07129 3.71289C8.8081 2.99113 8.26426 1.79123 7.27148 1.79102L0.914062 1.79102L0.914062 0.608398L12.0029 0.608399Z"
+                                    fill="white" stroke="white" />
+                            </svg>
+                        </div>
+
+                    </div>
+                </a>
+                <a class="case-info__block" href="#">
+
+                    <img src="../img/blocks/bg/1.png" alt="Строительный сектор">
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Секция контактов -->
+    <section class="contacts">
+        <div class="contact-animation">
+            <spline-viewer url="https://prod.spline.design/V0GxWNtDBUJUU9u8/scene.splinecode"></spline-viewer>
+        </div>
+        <div class="contact-us">
+            <div class="contact-us__top">
+                <h2 class="contact-us__top-title">
+                    Давай знакомиться
+                </h2>
+            </div>
+            <form class="contact-us__form" action="#">
+                <input class="contact-us__form-input" type="text" placeholder="Имя" tabindex="1">
+                <input class="contact-us__form-input" type="text" placeholder="Номер телефона" tabindex="2">
+                <input class="contact-us__form-input" type="text" placeholder="Вид бизнеса" tabindex="3">
+                <textarea class="contact-us__form-textarea" placeholder="Опишите задачу" tabindex="4"></textarea>
+                <button class="contact-us__form-button" type="submit" tabindex="5">Отправить</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <!-- Десктопная структура (остается как было) -->
+        <a class="footer-link__logo" href="#">
+            <img src="../img/index/logo.svg" alt="Logo">
+        </a>
+        <ul class="footer-list">
+            <li class="footer-item"><a class="footer-link" href="#">
+                    Политика конфиденциальности
+                </a></li>
+            <li class="footer-item"><a class="footer-link" href="#">
+                    Политика персональных данных
+                </a></li>
+            <li class="footer-item"><a class="footer-link" href="#">
+                    mypl@googl.com
+                </a></li>
+            <li class="footer-item"><a class="footer-link" href="#">
+                    И также адрес
+                </a></li>
+        </ul>
+        <div class="footer-social">
+            <a class="footer-social-whatsapp" href="#">
+                <img src="../img/social/whatsapp.svg" alt="Whatsapp">
+            </a>
+            <a class="footer-social-telegram" href="#">
+                <img src="../img/social/telegram.svg" alt="Telegram">
+            </a>
+        </div>
+
+        <!-- Адаптивная структура для экранов < 1200px -->
+        <div class="footer-top-row">
+            <div class="footer-left-group">
+                <a class="footer-link__logo" href="#">
+                    <img src="../img/index/logo.svg" alt="Logo">
+                </a>
+                <a class="footer-email" href="mailto:mypl@googl.com">
+                    mypl@googl.com
+                </a>
+            </div>
+            <div class="footer-social">
+                <a class="footer-social-whatsapp" href="#">
+                    <img src="../img/social/whatsapp.svg" alt="Whatsapp">
+                </a>
+                <a class="footer-social-telegram" href="#">
+                    <img src="../img/social/telegram.svg" alt="Telegram">
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-policies">
+            <a class="footer-policy-item" href="#">
+                Политика конфиденциальности
+            </a>
+            <a class="footer-policy-item" href="#">
+                Политика персональных данных
+            </a>
+        </div>
+
+        <a class="footer-address" href="#">
+            И также адрес
+        </a>
+    </footer>
+    <script src="../app.js"></script>
+</body>
+
+</html>

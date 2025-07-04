@@ -1,0 +1,463 @@
+/*! -- Contact Section Enhanced Styles -- !*/
+.contacts {
+    display: grid;
+    grid-template-columns: 60% auto;
+    min-height: 100vh;
+    position: relative;
+}
+
+.contact-animation {
+    position: relative;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    overflow: hidden;
+}
+
+.contact-animation::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:
+        radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.3) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(255, 119, 198, 0.3) 0%, transparent 50%),
+        radial-gradient(circle at 40% 40%, rgba(120, 219, 255, 0.3) 0%, transparent 50%);
+    z-index: 1;
+}
+
+.contact-animation spline-viewer {
+    pointer-events: auto;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+}
+
+.contact-us {
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid var(--grey);
+    background: var(--white);
+    position: relative;
+    z-index: 3;
+}
+
+.contact-us__top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--grey);
+}
+
+.contact-us__top-title--mobile {
+    display: none;
+}
+
+.contact-us__top-title {
+    display: block;
+    font-size: 28px;
+    font-family: var(--family-third);
+    text-align: center;
+    font-weight: var(--text-Regular);
+    padding: 40px 20px;
+    margin: 0;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--night) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    position: relative;
+}
+
+.contact-us__top-title::after {
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--night) 100%);
+    border-radius: 2px;
+}
+
+.contact-us__form {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: var(--white);
+    position: relative;
+}
+
+/* Стили для полей ввода */
+.contact-us__form-input,
+.contact-us__form-textarea {
+    border: none;
+    border-top: 1px solid var(--grey);
+    padding: 20px;
+    font-family: var(--font-regular);
+    font-size: 16px;
+    transition: all 0.3s ease;
+    background: var(--white);
+    position: relative;
+    outline: none;
+}
+
+.contact-us__form-input:focus,
+.contact-us__form-textarea:focus {
+    background: rgba(var(--primary-rgb, 74, 144, 226), 0.02);
+    border-top-color: var(--primary);
+    box-shadow: inset 0 1px 0 0 var(--primary);
+}
+
+.contact-us__form-input::placeholder,
+.contact-us__form-textarea::placeholder {
+    color: var(--grey);
+    transition: color 0.3s ease;
+}
+
+.contact-us__form-input:focus::placeholder,
+.contact-us__form-textarea:focus::placeholder {
+    color: var(--primary);
+}
+
+.contact-us__form-textarea {
+    padding-bottom: 0;
+    margin-bottom: 20px;
+    height: 100%;
+    min-height: 120px;
+    resize: none;
+    font-family: var(--font-regular);
+    line-height: 1.5;
+}
+
+/* Стили валидации */
+.contact-us__form-input.valid,
+.contact-us__form-textarea.valid {
+    border-top-color: #4CAF50;
+    background: rgba(76, 175, 80, 0.02);
+    box-shadow: inset 0 1px 0 0 #4CAF50;
+}
+
+.contact-us__form-input.error,
+.contact-us__form-textarea.error {
+    border-top-color: #f44336;
+    background: rgba(244, 67, 54, 0.02);
+    box-shadow: inset 0 1px 0 0 #f44336;
+    animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-5px);
+    }
+
+    75% {
+        transform: translateX(5px);
+    }
+}
+
+/* Индикаторы валидации */
+.contact-us__form-input.valid::after,
+.contact-us__form-textarea.valid::after {
+    content: '✓';
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #4CAF50;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.contact-us__form-input.error::after,
+.contact-us__form-textarea.error::after {
+    content: '✗';
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #f44336;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Стили кнопки отправки */
+.contact-us__form-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 60px;
+    width: 100%;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--night) 100%);
+    font-size: var(--xl);
+    font-family: var(--family-third);
+    color: var(--white);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: var(--text-Regular);
+}
+
+.contact-us__form-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s ease;
+}
+
+.contact-us__form-button:hover::before {
+    left: 100%;
+}
+
+.contact-us__form-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.contact-us__form-button:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-us__form-button:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+.contact-us__form-button.loading {
+    background: linear-gradient(135deg, #ccc 0%, #999 100%);
+}
+
+.contact-us__form-button.loading::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 2px solid transparent;
+    border-top: 2px solid var(--white);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-left: 10px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Уведомления */
+.form-notification {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid;
+}
+
+.form-notification--success {
+    border-left-color: #4CAF50;
+}
+
+.form-notification--error {
+    border-left-color: #f44336;
+}
+
+/* Адаптивные стили */
+@media (max-width: 1100px) {
+    .contact-us__top-title {
+        font-size: 24px;
+        padding: 30px 15px;
+    }
+}
+
+@media (max-width: 900px) {
+    .contacts {
+        grid-template-columns: 1fr;
+        min-height: auto;
+    }
+
+    .contact-animation {
+        min-height: 300px;
+        order: 2;
+    }
+
+    .contact-us {
+        border-left: none;
+        border-bottom: 1px solid var(--grey);
+        order: 1;
+    }
+
+    .contact-us__top-title--mobile {
+        display: block;
+        font-size: 20px;
+        text-align: center;
+        padding: 20px;
+        margin: 0;
+    }
+
+    .contact-us__top-title {
+        display: none;
+    }
+
+    .contact-us__form-input,
+    .contact-us__form-textarea {
+        padding: 15px;
+    }
+
+    .contact-us__form-textarea {
+        min-height: 100px;
+        border-bottom: 1px solid var(--grey);
+    }
+
+    .contact-us__form-button {
+        min-height: 50px;
+        font-size: var(--lg);
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-us__top-title--mobile {
+        font-size: 18px;
+        padding: 15px;
+    }
+
+    .contact-us__form-input,
+    .contact-us__form-textarea {
+        padding: 12px 15px;
+        font-size: 14px;
+    }
+
+    .contact-us__form-textarea {
+        min-height: 80px;
+    }
+
+    .contact-us__form-button {
+        min-height: 45px;
+        font-size: var(--md);
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-animation {
+        min-height: 250px;
+    }
+
+    .contact-us__top-title--mobile {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .contact-us__form-input,
+    .contact-us__form-textarea {
+        padding: 10px 12px;
+        font-size: 14px;
+    }
+
+    .form-notification {
+        top: 10px;
+        right: 10px;
+        left: 10px;
+        font-size: 13px;
+        padding: 12px 15px;
+        transform: translateY(-100px);
+    }
+
+    .form-notification.show {
+        transform: translateY(0);
+    }
+}
+
+/* Дополнительные анимации для плавности */
+.contact-us__form-input,
+.contact-us__form-textarea {
+    transform: translateY(0);
+    opacity: 1;
+    transition: all 0.3s ease, transform 0.6s ease, opacity 0.6s ease;
+}
+
+.contact-us__form-input:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.contact-us__form-input:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.contact-us__form-input:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.contact-us__form-textarea {
+    animation-delay: 0.4s;
+}
+
+.contact-us__form-button {
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Эффект при загрузке страницы */
+.contacts.loaded .contact-us__form-input,
+.contacts.loaded .contact-us__form-textarea,
+.contacts.loaded .contact-us__form-button {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+/* Улучшенная типографика */
+.contact-us__form-input,
+.contact-us__form-textarea {
+    font-variant-ligatures: common-ligatures;
+    text-rendering: optimizeLegibility;
+}
+
+/* Темная тема (если потребуется) */
+@media (prefers-color-scheme: dark) {
+    .contact-us {
+        background: #1a1a1a;
+        color: #ffffff;
+    }
+
+    .contact-us__form-input,
+    .contact-us__form-textarea {
+        background: #2a2a2a;
+        color: #ffffff;
+        border-top-color: #444;
+    }
+
+    .contact-us__form-input::placeholder,
+    .contact-us__form-textarea::placeholder {
+        color: #999;
+    }
+}

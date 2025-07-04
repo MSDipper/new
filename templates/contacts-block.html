@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="../global.css">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../styles/contacts.css">
+    <title>Контакты - MYPL</title>
+</head>
+
+<body>
+    <!-- Блок контактов -->
+    <section class="contacts" id="contacts">
+        <!-- Анимация/изображение слева -->
+        <div class="contact-animation">
+            <!-- Spline 3D анимация (можно заменить на изображение или другую анимацию) -->
+            <spline-viewer url="https://prod.spline.design/V0GxWNtDBUJUU9u8/scene.splinecode"></spline-viewer>
+
+            <!-- Альтернативный вариант с изображением -->
+            <!-- 
+            <div class="contact-image">
+                <img src="../img/contacts/contact-bg.jpg" alt="Свяжитесь с нами">
+            </div>
+            -->
+
+            <!-- Альтернативный вариант с CSS анимацией -->
+            <!--
+            <div class="contact-css-animation">
+                <div class="floating-shapes">
+                    <div class="shape shape-1"></div>
+                    <div class="shape shape-2"></div>
+                    <div class="shape shape-3"></div>
+                </div>
+            </div>
+            -->
+        </div>
+
+        <!-- Форма контактов справа -->
+        <div class="contact-us">
+            <!-- Заголовок -->
+            <div class="contact-us__top">
+                <!-- Заголовок для десктопа -->
+                <h2 class="contact-us__top-title">
+                    Давайте знакомиться
+                </h2>
+
+                <!-- Заголовок для мобильных устройств -->
+                <h2 class="contact-us__top-title--mobile">
+                    Свяжитесь с нами
+                </h2>
+            </div>
+
+            <!-- Форма -->
+            <form class="contact-us__form" action="#" method="POST" id="contactForm">
+                <!-- Поле для имени -->
+                <input class="contact-us__form-input" type="text" name="name" placeholder="Имя" tabindex="1" required
+                    autocomplete="given-name">
+
+                <!-- Поле для телефона -->
+                <input class="contact-us__form-input" type="tel" name="phone" placeholder="Номер телефона" tabindex="2"
+                    required autocomplete="tel">
+
+                <!-- Поле для вида бизнеса -->
+                <input class="contact-us__form-input" type="text" name="business" placeholder="Вид бизнеса" tabindex="3"
+                    autocomplete="organization">
+
+                <!-- Поле для описания задачи -->
+                <textarea class="contact-us__form-textarea" name="task" placeholder="Опишите задачу" tabindex="4"
+                    required rows="5"></textarea>
+
+                <!-- Кнопка отправки -->
+                <button class="contact-us__form-button" type="submit" tabindex="5">
+                    Отправить
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Скрипты -->
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.48/build/spline-viewer.js"></script>
+    <script src="../js/contacts.js"></script>
+
+    <!-- Пример использования без основного app.js -->
+    <script>
+        // Добавляем класс loaded для анимаций при загрузке страницы
+        document.addEventListener('DOMContentLoaded', function () {
+            setTimeout(() => {
+                document.querySelector('.contacts').classList.add('loaded');
+            }, 100);
+        });
+    </script>
+</body>
+
+</html>

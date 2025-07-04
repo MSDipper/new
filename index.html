@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.82/build/spline-viewer.js"></script>
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.72/build/spline-viewer.js"></script>
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.72/build/spline-viewer.js"></script>
+    <link rel="stylesheet" href="./styles.css">
+    <title>MYPL - Digital Agency</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-content">
+            <a class="header-logo" href="#">
+                <img src="./img/index/logo.svg" alt="MYPL Logo">
+            </a>
+
+            <div class="header-search">
+                <input class="header-search__input" type="text">
+                <button class="header-search__button" type="button">
+                    <img src="./img/index/seatch.svg" alt="Search">
+                </button>
+            </div>
+
+            <nav class="header-nav">
+                <ul class="header-nav__list">
+                    <li class="header-nav__item">
+                        <a class="header-nav__link" href="#">EN</a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a class="header-nav__link" href="#">О нас</a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a class="header-nav__link" href="#">Кейсы</a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a class="header-nav__link" href="#">Услуги</a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a class="header-nav__link header-nav__link--phone" href="tel:+79992293679">89992293679</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Бургер кнопка -->
+            <button class="burger-btn" id="burgerBtn" aria-label="Открыть меню">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </button>
+
+            <div class="header-social">
+                <a class="header-social__link header-social__link--whatsapp" href="#">
+                    <img src="./img/social/whatsapp.svg" alt="WhatsApp">
+                </a>
+                <a class="header-social__link header-social__link--telegram" href="#">
+                    <img src="./img/social/telegram.svg" alt="Telegram">
+                </a>
+            </div>
+
+            <a class="header-contact" href="#">
+                <span class="header-contact__text">Контакты</span>
+                <img class="header-contact__arrow" src="./img/social/arrow.svg" alt="Arrow">
+            </a>
+        </div>
+    </header>
+
+    <!-- Полноэкранное мобильное меню -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu__content">
+            <div class="mobile-menu__top"></div>
+            
+            <nav class="mobile-nav">
+                <ul class="mobile-nav__list">
+                    <li class="mobile-nav__item">
+                        <a class="mobile-nav__link" href="#">EN</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                        <a class="mobile-nav__link" href="#">О нас</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                        <a class="mobile-nav__link" href="#">Кейсы</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                        <a class="mobile-nav__link" href="#">Услуги</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                        <a class="mobile-nav__link mobile-nav__link--phone" href="tel:+79992293679">89992293679</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="mobile-menu__bottom">
+                <div class="mobile-social">
+                    <a class="mobile-social__link" href="#">
+                        <img src="./img/social/whatsapp.svg" alt="WhatsApp">
+                    </a>
+                    <a class="mobile-social__link mobile-social__link--telegram" href="#">
+                        <img src="./img/social/telegram.svg" alt="Telegram">
+                    </a>
+                </div>
+
+                <a class="mobile-contact" href="#">
+                    <span class="mobile-contact__text">Контакты</span>
+                    <img class="mobile-contact__arrow" src="./img/social/arrow.svg" alt="Arrow">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <main class="main">
+        <section class="hero">
+            <div class="hero-content">
+                <div class="hero-content__left">
+                    <div class="hero-content__left-wrapper">
+                        <p class="hero-subtitle">Акерман Д.И - СЕО команды MYPL</p>
+                        <p class="hero-subtitle--mobile">
+                            С нами клиенты остаются годами
+                        </p>
+                        <h1 class="hero-title">
+                            <span>“</span>От стартапа до крупного бизнеса — ваш сайт будет адаптироваться под ваши
+                            цели<span>”</span>
+                        </h1>
+
+                    </div>
+                    <div class="hero-button">
+                        <a class="hero-button__case" href="#">КЕЙСЫ</a>
+                        <a class="hero-button__order" href="#">Заказать</a>
+                    </div>
+                </div>
+                <div class="hero-content__right">
+                    <spline-viewer  url="https://prod.spline.design/lHY0GdkLjnaXPp-J/scene.splinecode"></spline-viewer>
+                </div>
+        </section>
+
+        <!-- Infinite scroll компаний -->
+        <div class="companies">
+            <div class="companies-scroll">
+                <div class="companies-track">
+                    <!-- Первый набор -->
+                    <div class="companies-item">
+                        <img src="./img/company/1.png" alt="company">
+                    </div>
+                    <div class="companies-item">
+                        <img src="./img/company/2.png" alt="company">
+                    </div>
+                    <div class="companies-item">
+                        <img src="./img/company/3.png" alt="company">
+                    </div>
+                    <div class="companies-item">
+                        <img src="./img/company/1.png" alt="company">
+                    </div>
+                    <div class="companies-item">
+                        <img src="./img/company/2.png" alt="company">
+                    </div>
+                    <div class="companies-item">
+                        <img src="./img/company/3.png" alt="company">
+                    </div>
+                    <!-- Дублируем весь набор для seamless loop -->
+                    <div class="companies-item">
+                        <img src="./img/company/1.png" alt="company">
+                    </div>
+                    <div class="companies-item">
+                        <img src="./img/company/2.png" alt="company">
+                    </div>
+                    <div class="companies-item">
+                        <img src="./img/company/3.png" alt="company">
+                    </div>
+                    <div class="companies-item">
+                        <img src="./img/company/1.png" alt="company">
+                    </div>
+                    <div class="companies-item">
+                        <img src="./img/company/2.png" alt="company">
+                    </div>
+                    <div class="companies-item">
+                        <img src="./img/company/3.png" alt="company">
+                    </div>
+                    <!-- Ещё один набор для полной бесконечности -->
+                    <div class="companies-item">
+                        <img src="./img/company/1.png" alt="company">
+                    </div>
+                    <div class="companies-item">
+                        <img src="./img/company/2.png" alt="company">
+                    </div>
+                    <div class="companies-item">
+                        <img src="./img/company/3.png" alt="company">
+                    </div>
+                    <div class="companies-item">
+                        <img src="./img/company/1.png" alt="company">
+                    </div>
+                    <div class="companies-item">
+                        <img src="./img/company/2.png" alt="company">
+                    </div>
+                    <div class="companies-item">
+                        <img src="./img/company/3.png" alt="company">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="about">
+            <div class="about-wrapper">
+                <div class="about-content__animation">
+                    <spline-viewer url="https://prod.spline.design/Vs2m3KD5e7qffi4h/scene.splinecode"></spline-viewer>
+                </div>
+                <div class="about-content">
+                    <div class="about-content__right">
+                        <div class="about-content__right-top">
+                            <h2 class="about-title">
+                                <span class="span">“</span>Сайт, который работает на вас!<span class="span">”</span>
+                            </h2>
+                            <div class="about-content__right-button-wrapper">
+                                <a class="about-content__right-button" href="#">
+                                    Связаться
+                                </a>
+                            </div>
+                        </div>
+                        <div class="about-blocks">
+                            <div class="about-block__wrapper">
+                                <div class="about-block__image">
+                                    <svg class="about-block__container" viewBox="0 0 232 265" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1 264V6.74863V1H38.7904L45.3059 6.74863H231V243.88H195.387L164.968 264H1Z"
+                                            fill="white" stroke="#D9D9D9" />
+                                    </svg>
+
+                                    <div>
+                                        <div class="about-block__content">
+                                            <div class="about-block__content-top">
+                                                <h4 class="about-block__content-top-title">
+                                                    БЫСТРЫЙ ЗАПУСК БЕЗ ПОТЕРИ КАЧЕСТВА
+                                                </h4>
+                                                <img class="about-block__content-top-img" src="./img/index/time.png"
+                                                    alt="КАЧЕСТВО
+                                    ">
+                                            </div>
+                                            <p class="about-block__content-text">
+                                                Сайт, который работает «из коробки» — от идеи до онлайн-запуска за 2–4
+                                                недели.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="about-block__image">
+                                    <svg class="about-block__container" viewBox="0 0 232 265" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1 264V6.74863V1H38.7904L45.3059 6.74863H231V243.88H195.387L164.968 264H1Z"
+                                            fill="white" stroke="#D9D9D9" />
+                                    </svg>
+
+                                    <div>
+                                        <div class="about-block__content">
+                                            <div class="about-block__content-top">
+                                                <h4 class="about-block__content-top-title">
+                                                    ФИКСИРОВАННАЯ СТОИМОСТЬ И НУЛЕВОЙ РИСК
+                                                </h4>
+                                                <img class="about-block__content-top-img" src="./img/index/down.png"
+                                                    alt="РИСК
+                            ">
+                                            </div>
+                                            <p class="about-block__content-text">
+                                                Бюджет под контролем — избежите перерасхода на +30–50% по сравнению с
+                                                классическим подходом.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="about-block__image">
+                                    <svg class="about-block__container" viewBox="0 0 232 265" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1 264V6.74863V1H38.7904L45.3059 6.74863H231V243.88H195.387L164.968 264H1Z"
+                                            fill="white" stroke="#D9D9D9" />
+                                    </svg>
+
+                                    <div>
+                                        <div class="about-block__content">
+                                            <div class="about-block__content-top">
+                                                <h4 class="about-block__content-top-title">
+                                                    КОНВЕРСИЯ, А НЕ «КРАСИВАЯ ВЕРСТКА»
+                                                </h4>
+                                                <img class="about-block__content-top-img" src="./img/index/star.png"
+                                                    alt="Конверсия
+                            ">
+                                            </div>
+                                            <p class="about-block__content-text">
+                                                Конверсия растет на 20–40% — ваш сайт становится инструментом продаж, а
+                                                не визиткой.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="our-case">
+            <div class="our-case__top">
+                <a class="our-case__top-button" href="#">
+                    все проекты
+                </a>
+                <h2 class="our-case__top-title">
+                    Наши <span class="span"></span> Кейсы
+                </h2>
+
+            </div>
+            <div class="our-case__links-arrows">
+                <a class="our-case__link-arrow" href="#">
+                    <svg class="case-cat__arrow"  viewBox="0 0 52 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="25.668" cy="25.5" r="25" />
+                        <path d="M29.9141 29.7432L28.542 29.7432V24.5615L29.9141 24.5615V29.7432Z" />
+                        <path d="M29.9131 21.4707V21.9375L29.4688 22.3721C29.4557 22.3834 29.4421 22.3941 29.4297 22.4062L22.1426 29.543L21.6396 29.0498L26.9629 23.8369C27.6084 23.2045 27.1294 22.1575 26.2656 22.1572H21.4668V21.4707H29.9131Z"/>
+                    </svg>
+                </a>
+                <a class="our-case__link-arrow" href="#">
+                    <svg class="case-cat__arrow"  viewBox="0 0 52 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="25.668" cy="25.5" r="25" />
+                        <path d="M29.9141 29.7432L28.542 29.7432V24.5615L29.9141 24.5615V29.7432Z" />
+                        <path d="M29.9131 21.4707V21.9375L29.4688 22.3721C29.4557 22.3834 29.4421 22.3941 29.4297 22.4062L22.1426 29.543L21.6396 29.0498L26.9629 23.8369C27.6084 23.2045 27.1294 22.1575 26.2656 22.1572H21.4668V21.4707H29.9131Z"/>
+                    </svg>
+                </a>
+            </div>
+            <ul class="our-case__choise-list">
+                <li class="our-case__choise-item our-case__choise-item--active">
+                    <a class="our-case__choise-link " href="#">
+                        Сайты
+                    </a>
+                </li>
+                <li class="our-case__choise-item">
+                    <a class="our-case__choise-link" href="#">
+                        Боты
+                    </a>
+                </li>
+                <li class="our-case__choise-item">
+                    <a class="our-case__choise-link" href="#">
+                        AI
+                    </a>
+                </li>
+                <li class="our-case__choise-item">
+                    <a class="our-case__choise-link" href="#">
+                        Магазины
+                    </a>
+                </li>
+                <li class="our-case__choise-item">
+                    <a class="our-case__choise-link" href="#">
+                        CRM
+                    </a>
+                </li>
+                <li class="our-case__choise-item">
+                    <a class="our-case__choise-link" href="#">
+                        Дизайн
+                    </a>
+                </li>
+            </ul>
+            <div class="our-case__sliders">
+                <div class="our-case__slider">
+                    <img class="our-case__slider-image" src="./img/slider/1.jpg" />
+                    <h5 class="our-case__slider-title">
+                        Ctrl +Alt Defeat
+                    </h5>
+                </div>
+                <div class="our-case__slider">
+                    <img class="our-case__slider-image" src="./img/slider/2.jpg" />
+                    <h5 class="our-case__slider-title">
+                        NANOSVET
+                    </h5>
+                </div>
+                <div class="our-case__slider">
+                    <img class="our-case__slider-image" src="./img/slider/3.jpg" />
+                    <h5 class="our-case__slider-title">
+                        Moscow Spirits
+                    </h5>
+                </div>
+                <div class="our-case__slider">
+                    <img class="our-case__slider-image" src="./img/slider/4.jpg" />
+                    <h5 class="our-case__slider-title">
+                        Flat N
+                    </h5>
+                </div>
+                <div class="our-case__slider">
+                    <img class="our-case__slider-image" src="./img/slider/5.jpg" />
+                    <h5 class="our-case__slider-title">
+                        NFT
+                    </h5>
+                </div>
+                <div class="our-case__slider">
+                    <img class="our-case__slider-image" src="./img/slider/5.jpg" />
+                    <h5 class="our-case__slider-title">
+                        NFT
+                    </h5>
+                </div>
+                <div class="our-case__slider">
+                    <img class="our-case__slider-image" src="./img/slider/5.jpg" />
+                    <h5 class="our-case__slider-title">
+                        NFT
+                    </h5>
+                </div>
+                <div class="our-case__slider">
+                    <img class="our-case__slider-image" src="./img/slider/5.jpg" />
+                    <h5 class="our-case__slider-title">
+                        NFT
+                    </h5>
+                </div>
+                <div class="our-case__slider">
+                    <img class="our-case__slider-image" src="./img/slider/5.jpg" />
+                    <h5 class="our-case__slider-title">
+                        NFT
+                    </h5>
+                </div>
+                <div class="our-case__slider">
+                    <img class="our-case__slider-image" src="./img/slider/5.jpg" />
+                    <h5 class="our-case__slider-title">
+                        NFT
+                    </h5>
+                </div>
+                <div class="our-case__slider">
+                    <img class="our-case__slider-image" src="./img/slider/5.jpg" />
+                    <h5 class="our-case__slider-title">
+                        NFT
+                    </h5>
+                </div>
+                <div class="our-case__slider">
+                    <img class="our-case__slider-image" src="./img/slider/5.jpg" />
+                    <h5 class="our-case__slider-title">
+                        NFT
+                    </h5>
+                </div>
+                <div class="our-case__slider">
+                    <img class="our-case__slider-image" src="./img/slider/5.jpg" />
+                    <h5 class="our-case__slider-title">
+                        NFT
+                    </h5>
+                </div>
+                <div class="our-case__slider">
+                    <img class="our-case__slider-image" src="./img/slider/5.jpg" />
+                    <h5 class="our-case__slider-title">
+                        NFT
+                    </h5>
+                </div>
+                <div class="our-case__slider">
+                    <img class="our-case__slider-image" src="./img/slider/5.jpg" />
+                    <h5 class="our-case__slider-title">
+                        NFT
+                    </h5>
+                </div>
+            </div>
+
+            </div>
+        </section>
+        <section class="our-command">
+            <div class="our-command__participants">
+                <div class="our-command__participants-top">
+                    <h2 class="our-command__participants-title">
+                        Наша команда
+                    </h2>
+                    <ul class="our-command__participants-list">
+                        <li class="our-command__participants-item">
+                            <a class="our-command__participants-link our-command__participants-link--active" href="#">
+                                <img src="./img/avatars/1.png" alt="">
+                                <div class="our-command__participants-link-info">
+                                    <p class="our-command__participants-link-info-name">Иванов Иван</p>
+                                    <p class="our-command__participants-link-info-position">Программист</p>
+                                </div>
+                                <div class="our-command__participants-link-arrow">
+                                    <svg class="icon" viewBox="0 0 12 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8 13.1389L5.00679e-05 13.1389L5.02026e-05 10.0694L8 10.0694L8 13.1389Z" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M10.476 13.1391L11.3763 13.1391C11.7208 13.1391 12 12.854 12 12.5023L12 0.913773L9.81719 0.913773L9.81719 7.77098C9.81719 8.33825 9.14542 8.62234 8.75254 8.22121L1.54355 0.861084L7.43177e-05 2.43692L9.67941 12.3192C9.69495 12.3351 9.70928 12.3519 9.72236 12.3696L10.476 13.1391Z" />
+                                    </svg>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="our-command__participants-item">
+                            <a class="our-command__participants-link" href="#">
+                                <img src="./img/avatars/2.png" alt="">
+                                <div class="our-command__participants-link-info">
+                                    <p class="our-command__participants-link-info-name">Наталья Иванова</p>
+                                    <p class="our-command__participants-link-info-position">Дизайнер</p>
+                                </div>
+                                <div class="our-command__participants-link-arrow">
+                                    <svg class="icon" viewBox="0 0 12 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8 13.1389L5.00679e-05 13.1389L5.02026e-05 10.0694L8 10.0694L8 13.1389Z" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M10.476 13.1391L11.3763 13.1391C11.7208 13.1391 12 12.854 12 12.5023L12 0.913773L9.81719 0.913773L9.81719 7.77098C9.81719 8.33825 9.14542 8.62234 8.75254 8.22121L1.54355 0.861084L7.43177e-05 2.43692L9.67941 12.3192C9.69495 12.3351 9.70928 12.3519 9.72236 12.3696L10.476 13.1391Z" />
+                                    </svg>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="our-command__participants-item">
+                            <a class="our-command__participants-link" href="#">
+                                <img src="./img/avatars/3.png" alt="">
+                                <div class="our-command__participants-link-info">
+                                    <p class="our-command__participants-link-info-name">Петров Петр</p>
+                                    <p class="our-command__participants-link-info-position">Frontend разработчик</p>
+                                </div>
+                                <div class="our-command__participants-link-arrow">
+                                    <svg class="icon" viewBox="0 0 12 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8 13.1389L5.00679e-05 13.1389L5.02026e-05 10.0694L8 10.0694L8 13.1389Z" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M10.476 13.1391L11.3763 13.1391C11.7208 13.1391 12 12.854 12 12.5023L12 0.913773L9.81719 0.913773L9.81719 7.77098C9.81719 8.33825 9.14542 8.62234 8.75254 8.22121L1.54355 0.861084L7.43177e-05 2.43692L9.67941 12.3192C9.69495 12.3351 9.70928 12.3519 9.72236 12.3696L10.476 13.1391Z" />
+                                    </svg>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="our-command__participants-item">
+                            <a class="our-command__participants-link" href="#">
+                                <img src="./img/avatars/4.png" alt="">
+                                <div class="our-command__participants-link-info">
+                                    <p class="our-command__participants-link-info-name">Сидорова Анна</p>
+                                    <p class="our-command__participants-link-info-position">Backend разработчик</p>
+                                </div>
+                                <div class="our-command__participants-link-arrow">
+                                    <svg class="icon" viewBox="0 0 12 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8 13.1389L5.00679e-05 13.1389L5.02026e-05 10.0694L8 10.0694L8 13.1389Z" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M10.476 13.1391L11.3763 13.1391C11.7208 13.1391 12 12.854 12 12.5023L12 0.913773L9.81719 0.913773L9.81719 7.77098C9.81719 8.33825 9.14542 8.62234 8.75254 8.22121L1.54355 0.861084L7.43177e-05 2.43692L9.67941 12.3192C9.69495 12.3351 9.70928 12.3519 9.72236 12.3696L10.476 13.1391Z" />
+                                    </svg>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="our-command__participants-item">
+                            <a class="our-command__participants-link" href="#">
+                                <img src="./img/avatars/5.png" alt="">
+                                <div class="our-command__participants-link-info">
+                                    <p class="our-command__participants-link-info-name">Козлов Максим</p>
+                                    <p class="our-command__participants-link-info-position">DevOps инженер</p>
+                                </div>
+                                <div class="our-command__participants-link-arrow">
+                                    <svg class="icon" viewBox="0 0 12 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8 13.1389L5.00679e-05 13.1389L5.02026e-05 10.0694L8 10.0694L8 13.1389Z" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M10.476 13.1391L11.3763 13.1391C11.7208 13.1391 12 12.854 12 12.5023L12 0.913773L9.81719 0.913773L9.81719 7.77098C9.81719 8.33825 9.14542 8.62234 8.75254 8.22121L1.54355 0.861084L7.43177e-05 2.43692L9.67941 12.3192C9.69495 12.3351 9.70928 12.3519 9.72236 12.3696L10.476 13.1391Z" />
+                                    </svg>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="our-command__participants-content">
+                    <h2 class="our-command__participants-content-title">
+                        Иванов Иван
+                    </h2>
+                    <div class="our-command__participants-content-img">
+                        <img src="./img/avatars/main.png" alt="Иванов Иван">
+                    </div>
+                </div>
+            </div>
+            <div class="our-command__info">
+                <p class="our-command__info-text">Я программист с 4 годами опыта, владеющий JavaScript/TypeScript,
+                    Python, C# и C++. Придерживаюсь принципа «чистого и корректного кода», обеспечивая эффективность,
+                    масштабируемость и поддерживаемость своих проектов.</p>
+                <div class="our-command__info-block-title">
+                    Опыт и достижения
+                </div>
+                <p class="our-command__info-text">
+                    Разработал кастомную нейросеть для распознавания растений, предоставляющую пользователям детальную
+                    информацию в чате.
+                </p>
+                <div class="our-command__info-list">
+                    <p>Создал и успешно запустил более 120 ботов, включая:</p>
+                    <ul class="our-command__info-list-item">
+                        <li>
+                            70+ ботов для Telegram,
+                        </li>
+                        <li>
+                            20+ ботов для VK (ВКонтакте),
+                        </li>
+                        <li>
+                            50+ ботов для других платформ.
+                        </li>
+                    </ul>
+                </div>
+
+                <p class="our-command__info-text">
+                    Запустил 12+ проектов в различных сферах.
+                </p>
+                <p class="our-command__info-text">
+                    Создал собственный онлайн-магазин, достигнув оборота в $100,000.
+                </p>
+                <div class="our-command__info-block-title">
+                    Мои навыки
+                </div>
+                <p class="our-command__info-text">
+                    4 года программирования на Python.
+                </p>
+                <p class="our-command__info-text">
+                    3 года опыта работы с C# (Unity) и JavaScript/TypeScript.
+                </p>
+                <p class="our-command__info-text">
+                    1,5 года работы с C++.
+                </p>
+                <p class="our-command__info-text">
+                    4 года программирования на Python.
+                </p>
+            </div>
+        </section>
+        <!--!  !-->
+        <section class="service">
+            <div class="service-left">
+                <h2 class="service-left__title">
+                    заказать услугу
+                </h2>
+                <div class="service-left__img">
+                    <img src="./img/index/notebook.png" alt="notebook">
+                    <div class="service-left__content">
+                        <h5 class="service-left__content-title">
+                            Создание сайта
+                        </h5>
+                        <p class="service-left__content-text">
+                            Создаём стильный, быстрый и удобный сайт под ваши задачи – от лендинга до интернет-магазина
+                        </p>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="service-right">
+                <div class="service-right__top">
+                    <div class="service-right__top-content">
+                        <h5 class="service-right__top-title">
+                            Автоматизация бизнес-процессов
+                        </h5>
+                        <p class="service-right__top-text">
+                            Наша команда разрабатывает умные боты, парсеры и скрейперы, которые автоматизируют любые
+                            процессы в вашей компании. Мы помогаем избавиться от ручной работы, увеличивая скорость
+                            и эффективность бизнес-операций.
+                        </p>
+                    </div>
+                    <img class="service-right__top-img" src="./img/index/settings.png" alt="Бизнес-процессы">
+                </div>
+                <div class="service-advantages">
+                    <div class="service-advantages__design">
+                        <img class="service-design__img" src="./img/index/cursor.png" alt="Дизайн">
+                        <div class="service-design__content">
+                            <h5 class="service-design__title">
+                                Дизайн
+                            </h5>
+                            <p class="service-design__text">
+                                Мы создаем визуальный образ, который работает на доверие, одновременно логично
+                                структурируя интерфейс: сложный сайт — главная причина отказов, поэтому мы упрощаем
+                                навигацию, чтобы пользователь находил нужную информацию за 3 клика.
+                            </p>
+                            <p class=" service-design__text service-design__text--mobile">
+                                Создадим стильный, функциональный и удобный дизайн для вашего проекта
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="service-advertising">
+                        <img class="service-advertising__img" src="./img/index/rub.png" alt="Реклама">
+                        <div class="service-advertising__content">
+                            <h5 class="service-avertising__title">
+                                Реклама
+                            </h5>
+                            <p class="service-avertising__text">
+                                Настроем эффективную рекламу для вашего бизнеса – привлечем клиентов через таргет,
+                                контекст и SMM
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+        </section>
+        <section class="contacts">
+            <div class="contact-animation">
+
+           <spline-viewer url="https://prod.spline.design/V0GxWNtDBUJUU9u8/scene.splinecode"></spline-viewer>
+    </div>
+        <div class="contact-us">
+            <div class="contact-us__top">
+            <h2 class="contact-us__top-title">
+                Давай знакомиться
+            </h2>
+            </div
+            <form class="contact-us__form" action="#">
+                <input class="contact-us__form-input" type="text" placeholder="Имя" tabindex="1">
+                <input class="contact-us__form-input" type="text" placeholder="Номер телефона" tabindex="2">
+                <input class="contact-us__form-input" type="text" placeholder="Вид бизнеса" tabindex="3">
+                <textarea class="contact-us__form-textarea" placeholder="Опишите задачу" tabindex="4"></textarea>
+                <button class="contact-us__form-button" type="submit" tabindex="5">Отправить</button>
+            </form>
+        </div>
+        </section>
+    </main>
+  
+    <footer class="footer">
+        <!-- Десктопная структура (остается как было) -->
+        <a class="footer-link__logo" href="#">
+            <img src="./img/index/logo.svg" alt="Logo">
+        </a>
+        <ul class="footer-list">
+            <li class="footer-item"><a class="footer-link" href="#">
+                Политика конфиденциальности
+            </a></li>
+            <li class="footer-item"><a class="footer-link" href="#">
+                Политика персональных данных
+            </a></li>
+            <li class="footer-item"><a class="footer-link" href="#">
+                mypl@googl.com
+            </a></li>
+            <li class="footer-item"><a class="footer-link" href="#">
+                И также адрес
+            </a></li>
+        </ul>
+        <div class="footer-social">
+            <a class="footer-social-whatsapp" href="#">
+                <img src="./img/social/whatsapp.svg" alt="Whatsapp">
+            </a>
+            <a class="footer-social-telegram" href="#">
+                <img src="./img/social/telegram.svg" alt="Telegram">
+            </a>
+        </div>
+
+        <!-- Адаптивная структура для экранов < 1200px -->
+        <div class="footer-top-row">
+            <div class="footer-left-group">
+                <a class="footer-link__logo" href="#">
+                    <img src="./img/index/logo.svg" alt="Logo">
+                </a>
+                <a class="footer-email" href="mailto:mypl@googl.com">
+                    mypl@googl.com
+                </a>
+            </div>
+            <div class="footer-social">
+                <a class="footer-social-whatsapp" href="#">
+                    <img src="./img/social/whatsapp.svg" alt="Whatsapp">
+                </a>
+                <a class="footer-social-telegram" href="#">
+                    <img src="./img/social/telegram.svg" alt="Telegram">
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-policies">
+            <a class="footer-policy-item" href="#">
+                Политика конфиденциальности
+            </a>
+            <a class="footer-policy-item" href="#">
+                Политика персональных данных
+            </a>
+        </div>
+
+        <a class="footer-address" href="#">
+            И также адрес
+        </a>
+    </footer>
+
+    <!-- Модальное окно для кейсов -->
+    <div class="modal-overlay" id="caseModal">
+        <div class="modal-container">
+            <!-- 6 частей модального окна для анимации -->
+            <div class="modal-part modal-part-1"></div>
+            <div class="modal-part modal-part-2"></div>
+            <div class="modal-part modal-part-3"></div>
+            <div class="modal-part modal-part-4"></div>
+            <div class="modal-part modal-part-5"></div>
+            <div class="modal-part modal-part-6"></div>
+            
+        
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>

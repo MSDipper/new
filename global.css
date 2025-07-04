@@ -1,0 +1,113 @@
+:root {
+    /*! Color */
+    --grey: #D9D9D9;
+    --black: #292929;
+    --primary: #AC84FF;
+    --white: #ffffff;
+    --night: #000000;
+    --cloud-light: #F7F8FD;
+    --text-accent: #515151;
+
+
+    /*! Font size  */
+    --xss: 10px;
+    --xs: 12px;
+    --sm: 14px;
+    --base: 16px;
+    --lg: 18px;
+    --xl: 20px;
+    --xl2: 24px;
+
+    /*! Font weight */
+    --text-Light: 300;
+    --text-Regular: 400;
+    --text-Medium: 500;
+    --text-Bold: 600;
+    --text-SemiBold: 700;
+    --text-ExtraBold: 800;
+    --text-Black: 900;
+
+    /*! Margin */
+    --margin: 8px;
+
+    /*! Padding  */
+    --padding: 8px;
+
+    /*! Size  */
+    --full: 100%;
+
+    /*! Radius  */
+    --radius-small: 4px;
+    --radius: 8px;
+    --radius-medium: 10px;
+    --radius-big: 16px;
+    --radius-lg: 20px;
+    --radius-xl2: 100px;
+
+    /*! Family */
+    --family-main: "Exo2", sans-serif;
+    --family-secondary: "Manrope", sans-serif;
+    --family-third: "Project Space", sans-serif;
+
+    /*! Font weight  */
+    --text-regular: 500;
+    --text-semiBold: 600;
+
+    --big_desktop: 1375px;
+    --desktop: 1345px;
+    --notebook: 1024px;
+    --tablet: 768px;
+    --tablet-mini: 640px;
+    --mobile: 426px;
+    --mobile_small: 90%;
+
+    /*! Content  */
+    --contentWidth: var(--big_desktop);
+
+}
+
+@font-face {
+    font-family: 'Project Space'; /* Название шрифта */
+    src: url('./fonts/project-space/Project Space.otf') format('truetype'), /* Укажите путь к TTF */
+         url('./fonts/project-space/Project Space.otf') format('opentype'); /* Укажите путь к OTF */
+    font-weight: normal; /* Укажите нужный вес (обычный, жирный и т.д.) */
+    font-style: normal; /* Укажите нужный стиль (normal, italic, oblique и т.д.) */
+}
+
+@font-face {
+    font-family: 'Exo2';
+    src: url('./fonts/project-space/Project Space.otf') format('truetype'); /* Подключение черного шрифта */
+    font-weight: 900; /* Укажите соответствующий вес шрифта */
+}
+@font-face {
+    font-family: 'Exo2';
+    src: url('./fonts/exo/Exo2-Black.ttf') format('truetype'); /* Подключение черного шрифта */
+    font-weight: 900; /* Укажите соответствующий вес шрифта */
+}
+
+@font-face {
+    font-family: 'Exo2';
+    src: url('./fonts/exo/Exo2-Bold.ttf') format('truetype'); /* Подключение жирного шрифта */
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Exo2';
+    src: url('./fonts/exo/Exo2-Light.ttf') format('truetype'); /* Подключение легкого шрифта */
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Exo2';
+    src: url('./fonts/exo/Exo2-Regular.ttf') format('truetype'); /* Подключение обычного шрифта */
+    font-weight: 400;
+}
+
+body {
+    font-family: var(--family-main);
+    background-color: var(--bg);
+    font-size: var(--base);
+    line-height: 1.4;
+    font-weight: var(--text-Regular);
+
+}

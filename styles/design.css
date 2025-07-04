@@ -22,20 +22,24 @@ img {
     max-width: 100%;
 }
 
-.hero{}
-.hero-bg{
+.hero {}
+
+.hero-bg {
     display: flex;
     justify-content: space-between;
     align-items: stretch;
     min-height: 400px;
 }
-.hero-bg__left{}
-.hero-bg__left-block{
+
+.hero-bg__left {}
+
+.hero-bg__left-block {
     display: flex;
     gap: 10px;
     min-width: 212px;
 }
-.hero-content{
+
+.hero-content {
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -43,25 +47,27 @@ img {
     padding: 0 15px;
     box-sizing: border-box;
 }
-.hero-content__top{
+
+.hero-content__top {
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: var(--full);
 }
 
-.hero-content__title{
+.hero-content__title {
     font-size: 52px;
     font-weight: var(--text-Regular);
-font-family: var(--family-secondary);
+    font-family: var(--family-secondary);
 }
-.hero-content__subtitle{
+
+.hero-content__subtitle {
     font-size: var(--sm);
     font-weight: var(--text-Regular);
-font-family: var(--family-secondary);
+    font-family: var(--family-secondary);
 }
-.hero-content__btn{
+
+.hero-content__btn {
     background-color: var(--primary);
     width: var(--full);
     padding: 13px 0;
@@ -70,14 +76,17 @@ font-family: var(--family-secondary);
     font-family: var(--family-third);
     display: block;
 }
-.hero-content__btn--mobile{
+
+.hero-content__btn--mobile {
     display: none;
 }
-.hero-bg__right{
+
+.hero-bg__right {
     display: flex;
     gap: 10px;
 }
-.hero img{
+
+.hero img {
     width: 101px;
 }
 /*! Business-steps-title !*/
@@ -340,6 +349,7 @@ flex-direction: column;
     border-bottom: 1px solid var(--grey);
 }
 .business-steps-title{
+    border-top: 1px solid var(--grey);
     border-bottom: 1px solid var(--grey);
     font-size: var(--xl);
     font-weight: var(--text-Regular);
@@ -407,21 +417,21 @@ padding-right: 40px;
     .hero-content__top {
         padding: 0;
     }
-    .hero-content{
+
+    .hero-content {
         padding: 0;
 
     }
-}
 
-
-@media (max-width: 925px) {
     .business-steps-templates {
         flex-direction: column;
     }
-    .hero-bg__left-block{
+
+    .hero-bg__left-block {
         display: none;
     }
-    .hero-bg__right{
+
+    .hero-bg__right {
         display: none;
     }
 }
@@ -531,17 +541,17 @@ padding-right: 40px;
     .hero-content {
         padding: 0 10px;
     }
-    
+
     .hero-content__title {
         font-size: 24px;
         line-height: 1.2;
     }
-    
+
     .hero-content__subtitle {
         font-size: 14px;
         line-height: 1.4;
     }
-    
+
     .business-steps-left--img {
         padding: 15px;
         padding-bottom: 0;
